@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: "Play", sans-serif;
+}
+
+
+#portada {
+    min-height: 100vh;
+    background-image: url(FOTO3.jpg);
+    background-size: cover;
+    /* adapta la foto al espacio */
+    background-position: top center;
+
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+#logo {
+    font-family: "Play", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 0 0.5em;
+
+}
+
+#textos {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 80vh;
+    align-content: center;
+    text-transform: uppercase;
+}
+
+#textos h1 {
+    font-size: 2.5em;
+    color: red;
+
+}
+
+#textos h2 {
+    font-size: 2em;
+    /* para poder moverlo ahi en el lugar  */
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+#textos a {
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    border-radius: 50px;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin-bottom: 1em;
+    position: relative;
+    right: 0;
+    margin: 1em 0;
+}
+
+#textos #invertido {
+    color: #ffffff;
+    background-color: red;
+    width: fit-content;
+}
+
+#cta {
+    font-weight: bold;
+    color: black;
+    padding: 0.5em 1em;
+}
+
+
+@media all and (min-width:768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-position: bottom center;
+        /* si quiero agrandar la leta cuando pasa del celu a la tamblet le agrego algo al font size */
+    }
+
+    #logo {
+        color: white;
+    }
+
+    #nav a {
+        color: rgb(255, 255, 255);
+    }
+
+    #textos {
+        font-size: 1.2rem;
+    }
+
+    #textos h1{
+        font-size: 4.5em;
+    }
+    
+
+}
+
+/* desktop */
+@media all and (min-width:1200px) {
+    #textos h1 {
+        font-size: 7em;
+    }
+
+    #textos h2 {
+        font-size: 2.5em;
+        font-weight: bolder;
+      
+    }
+
+    #nav {
+        color: #ffffff;
+      
+    }
+}
